@@ -1,7 +1,7 @@
 <template>
   <div>
     <TabLink link="/" symbols="" title="Overview"></TabLink>
-    <TabLink link="/repo" symbols="" title="Repo"> </TabLink>
+    <TabLink link="/repo" symbols="" title="Repositories"> </TabLink>
     <TabLink link="/" symbols="" title="Projects"> </TabLink>
     <TabLink link="/" symbols="" title="Packages"> </TabLink>
     <TabLink link="/" symbols="" title="Stars"> </TabLink>

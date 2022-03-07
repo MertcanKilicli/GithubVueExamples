@@ -2,18 +2,20 @@
   <div id="app">
     <TheHeader></TheHeader>
     <NavTabs></NavTabs>
-    <router-view />
+    <InfoCard></InfoCard>
   </div>
 </template>
 <script>
 import TheHeader from "@/views/partials/TheHeader";
 import NavTabs from "@/views/partials/NavTabs";
+import InfoCard from "@/components/InfoCard";
 
 
 export default {
   components: {
     NavTabs,
     TheHeader,
+    InfoCard
   },
 };
 </script>
