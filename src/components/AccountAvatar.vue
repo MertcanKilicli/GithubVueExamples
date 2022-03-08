@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="image" :src="picture" :width="size" alt="picture" />
+    <img class="img-fluid" :src="picture" :width="size" alt="picture" />
   </div>
 </template>
 

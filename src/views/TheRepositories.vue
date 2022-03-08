@@ -28,6 +28,8 @@ import axios from "axios";
 
 export default {
   name: "TheRepositories",
+  props: {
+  },
   data() {
     return {
       repos: null,

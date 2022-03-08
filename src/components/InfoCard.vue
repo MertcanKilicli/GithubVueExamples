@@ -1,19 +1,15 @@
 <template>
-  <div class="card" style="width: 18rem;">
-    <AccountAvatar class="card-img-top" picture="@/assets/profile-picture.jpeg"></AccountAvatar>
-    <div class="card-body">
-      <h4 class="card-big-title">Mertcan Kılıçlı</h4>
-      <h5 class="card-little-title" position="left">Mertcan Kılıçlı</h5>
-      <p class="card-id" position="left">Ankara University-Statistic</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <button class="bi-menu-button-wide" color="black">Edit Profile</button>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Follower</a>
-      <a href="#" class="card-link">Following</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
+  <div>
+    <p>{{avatarUrl}}</p>
+    <p>{{login}}</p>
+    <h1>{{url}}</h1>
+    <h1>{{name}}</h1>
+    <h1>{{location}}</h1>
+    <h1>{{bio}}</h1>
+    <h1>{{twitterUsername}}</h1>
+    <h1>{{followers}}</h1>
+    <h1>{{following}}</h1>
+    <AccountAvatar picture="image>" size="big"></AccountAvatar>
   </div>
 </template>
 
@@ -25,6 +21,46 @@ export default {
   name: "InfoCard",
   components: {
     AccountAvatar,
+  },
+  props: {
+    avatarUrl: {
+      type: String,
+      required: true,
+    },
+    login: {
+      type: String,
+      required: true,
+    },
+    url: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    location: {
+      type: String,
+      required: true,
+    },
+    bio: {
+      type: String,
+      required: true,
+    },
+    twitterUsername: {
+      type: String,
+      required: true,
+    },
+    followers: {
+      type: Number,
+      required: true,
+      default: 1,
+    },
+    following: {
+      type: Number,
+      required: true,
+      default: 10,
+    }
   }
 };
 </script>
