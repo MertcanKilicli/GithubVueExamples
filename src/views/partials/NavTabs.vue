@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <TabLink link="/" symbols="" title="Overview"></TabLink>
     <TabLink link="/repo" symbols="" title="Repositories"> </TabLink>
     <TabLink link="/" symbols="" title="Projects"> </TabLink>

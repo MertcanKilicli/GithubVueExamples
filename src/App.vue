@@ -1,8 +1,17 @@
 <template>
   <div id="app">
     <TheHeader></TheHeader>
-    <NavTabs></NavTabs>
-    <InfoCard></InfoCard>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <InfoCard></InfoCard>
+        </div>
+        <div class="col">
+          <NavTabs></NavTabs>
+        </div>
+      </div>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 <script>
@@ -26,7 +35,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0d1117
 }
 
 nav {

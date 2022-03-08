@@ -1,6 +1,6 @@
 <template>
   <div class="card" style="width: 18rem;">
-    <img src="/" class="card-img-top" alt="...">
+    <AccountAvatar class="card-img-top" picture="@/assets/profile-picture.jpeg"></AccountAvatar>
     <div class="card-body">
       <h4 class="card-big-title">Mertcan Kılıçlı</h4>
       <h5 class="card-little-title" position="left">Mertcan Kılıçlı</h5>
@@ -17,9 +17,15 @@
   </div>
 </template>
 
+
 <script>
+import AccountAvatar from "@/components/AccountAvatar";
+
 export default {
-  name: "InfoCard"
+  name: "InfoCard",
+  components: {
+    AccountAvatar,
+  }
 };
 </script>
 
