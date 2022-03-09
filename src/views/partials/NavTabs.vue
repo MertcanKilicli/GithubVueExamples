@@ -1,12 +1,8 @@
 <template>
-  <div class="container">
-    <TabLink link="/" symbols="" title="Overview"></TabLink>
+  <div class="d-flex flex-row bd-highlight m-4 justify-content-center">
+    <TabLink  link="/" symbols="" title="Overview"></TabLink>
     <TabLink link="/repo" symbols="" title="Repositories"> </TabLink>
-    <TabLink link="/" symbols="" title="Projects"> </TabLink>
-    <TabLink link="/" symbols="" title="Packages"> </TabLink>
-    <TabLink link="/" symbols="" title="Stars"> </TabLink>
   </div>
-
 </template>
 
 <script>

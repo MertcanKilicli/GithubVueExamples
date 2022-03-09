@@ -1,20 +1,27 @@
 <template>
   <div>
-    <p>{{avatarUrl}}</p>
-    <p>{{login}}</p>
-    <h1>{{url}}</h1>
-    <h1>{{name}}</h1>
-    <h1>{{location}}</h1>
-    <h1>{{bio}}</h1>
-    <h1>{{twitterUsername}}</h1>
-    <h1>{{followers}}</h1>
-    <h1>{{following}}</h1>
-    <AccountAvatar picture="image>" size="big"></AccountAvatar>
+    <div class="card-header" style="width: 20rem;">
+        <AccountAvatar picture="image" size="big">
+        </AccountAvatar>
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">{{login}}</p>
+      </div>
+       <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{bio}}</li>
+        <li class="list-group-item">{{followers}} followers {{following}} following</li>
+        <li class="list-group-item">{{location}}</li>
+       </ul>
+      <div class="card-body">
+         <a href="https://twitter.com/mertcankiliclii" class="card-link">{{twitterUsername}}</a>
+      </div>
+    </div>
   </div>
 </template>
 
 
 <script>
+
 import AccountAvatar from "@/components/AccountAvatar";
 
 export default {
@@ -23,9 +30,9 @@ export default {
     AccountAvatar,
   },
   props: {
-    avatarUrl: {
+    avatar: {
       type: String,
-      required: true,
+      required: null,
     },
     login: {
       type: String,

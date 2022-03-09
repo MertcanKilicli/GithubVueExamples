@@ -1,9 +1,9 @@
 <template>
-  <div class="repo">
-    <table class="table-responsive">
+  <div class="row" style="width:20rem">
+    <div class="flex-column">
+    <table class="table-responsive-sm">
       <thead>
        <tr>
-        <th scope="col">ID</th>
         <th scope="col">Name</th>
         <th scope="col">Url</th>
         <th scope="col">Language</th>
@@ -11,8 +11,7 @@
        </tr>
       </thead>
        <tbody>
-        <tr v-for="repo in repos" :key="repo.id">
-        <td>{{repo.id}}</td>
+        <tr scope="row" v-for="repo in repos" :key="repo.id">
         <td>{{repo.name}}</td>
         <td>{{repo.html_url}}</td>
         <td>{{repo.language}}</td>
@@ -20,6 +19,7 @@
         </tr>
        </tbody>
     </table>
+    </div>
   </div>
 </template>
 <script>
@@ -28,8 +28,7 @@ import axios from "axios";
 
 export default {
   name: "TheRepositories",
-  props: {
-  },
+  props: {},
   data() {
     return {
       repos: null,

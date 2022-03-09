@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="img-fluid" :src="picture" :width="size" alt="picture" />
+    <img class="img-thumbnail" :src="picture" :width="size"  alt=""/>
   </div>
 </template>
 
@@ -11,7 +11,6 @@ export default {
     size: {
       type: Number,
       required: true,
-      default: 100,
     },
     picture: {
       type: String,

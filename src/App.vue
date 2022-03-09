@@ -3,20 +3,18 @@
     <TheHeader></TheHeader>
     <div class="row">
       <div class="col-4">
-        <InfoCard avatar-url=""
+        <InfoCard :avatar-Url="user.avatar_url"
                   :bio="user.bio"
                   :followers="user.followers"
                   :following="user.following"
                   :location="user.location"
                   :login="user.login"
                   :name="user.name"
-                  :twitter-username="user.twitter_username"
-                  :url="user.url">
+                  :twitter-username="user.twitter_username" url="">
         </InfoCard>
       </div>
       <div class="col-8">
         <NavTabs></NavTabs>
-        <Overview></Overview>
       </div>
   </div>
     <router-view></router-view>
